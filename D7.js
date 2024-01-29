@@ -85,8 +85,15 @@ const secondArr = [55, 22, 53, 56, 526, 5, 1214, 85];
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-const randomNum2 = Math.floor(Math.random() * 100);
-const shotsNums = [];
+// const randomNum2 = Math.floor(Math.random() * 100);
+let shotsNums = [];
+for (i = 1; i < 100; i++) {
+  if (i % 2 !== 0) {
+    shotsNums.push(i);
+  }
+}
+
+console.log(shotsNums);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
