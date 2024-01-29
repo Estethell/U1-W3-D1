@@ -71,11 +71,22 @@ const secondArr = [55, 22, 53, 56, 526, 5, 1214, 85];
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
+
+  
 */
+
+// const newArr = ["Epicode", "best", "course", "ever"];
+
+// let risultato2 = newArr.map((string) => string.length);
+
+// console.log("Esercizio 6", risultato2);
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+const randomNum2 = Math.floor(Math.random() * 100);
+const shotsNums = [];
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
