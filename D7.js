@@ -85,15 +85,14 @@ const secondArr = [55, 22, 53, 56, 526, 5, 1214, 85];
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-// const randomNum2 = Math.floor(Math.random() * 100);
-let shotsNums = [];
-for (i = 1; i < 100; i++) {
-  if (i % 2 !== 0) {
-    shotsNums.push(i);
-  }
-}
+// let shotsNums = [];
+// for (i = 1; i < 100; i++) {
+//   if (i % 2 !== 0) {
+//     shotsNums.push(i);
+//   }
+// }
 
-console.log(shotsNums);
+// console.log(shotsNums);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -210,21 +209,50 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+// let annoVecchio = null;
+// movies.forEach((film) => {
+//   if (annoVecchio === null) {
+//     annoVecchio = film.Year;
+//   }
+//   if (parseInt(annoVecchio) > parseInt(film.Year)) {
+//     annoVecchio = film.Year;
+//   }
+// });
+
+// let movie = movies.filter((x) => x.Year === annoVecchio);
+
+// console.log("Esercizio 9:", movie);
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
+// console.log("Esercizio 10:", movies.length);
+
+// let counter = 0;
+
+// movies.forEach((movie) => counter++);
+// console.log("Esercizio 10:", counter);
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+// let filmArr = movies.map((movie) => movie.Title);
+
+// console.log(filmArr);
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+// let film2000 = movies.filter((movie) => movie.Year > 2000);
+// console.log("esercizio 12:", film2000);
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+let moviesum = movies.reduce((accumulator, currentValue) => )
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
